@@ -1,83 +1,122 @@
 import { motion } from "framer-motion";
 import {
-  Stethoscope,
-  HeartPulse,
-  ShieldCheck,
+  Activity,
   Dumbbell,
-  Leaf,
-  Sparkles,
+  Flame,
+  Snowflake,
+  Zap,
+  HandHeart,
+  ShieldPlus,
+  Wind,
+  CircleDot,
 } from "lucide-react";
 
 const services = [
   {
-    title: "Médecine Traditionnelle Chinoise",
-    icon: Stethoscope,
-    desc: "Soins naturels pour l’équilibre du corps, la prévention et le bien-être global.",
+    icon: HandHeart,
+    title: "Massage thérapeutique chinois",
+    text: "Soulagement des douleurs musculaires, tensions, fatigue et blocages corporels.",
   },
   {
-    title: "Massage Thérapeutique Chinois",
-    icon: HeartPulse,
-    desc: "Massage pour soulager les douleurs, améliorer la circulation et détendre le corps.",
+    icon: CircleDot,
+    title: "Acupuncture",
+    text: "Stimulation des points énergétiques pour favoriser l’équilibre et la récupération.",
   },
   {
-    title: "Rééducation Fonctionnelle",
-    icon: ShieldCheck,
-    desc: "Accompagnement pour retrouver mobilité, force, posture et capacité physique.",
+    icon: Wind,
+    title: "Ventouses",
+    text: "Technique traditionnelle pour améliorer la circulation et libérer les tensions.",
   },
   {
-    title: "Kung-Fu",
+    icon: Zap,
+    title: "Électrostimulation",
+    text: "Activation musculaire assistée pour accompagner la rééducation fonctionnelle.",
+  },
+  {
+    icon: Flame,
+    title: "Thermothérapie",
+    text: "Utilisation de la chaleur pour détendre les muscles et réduire certaines douleurs.",
+  },
+  {
+    icon: Snowflake,
+    title: "Cryothérapie",
+    text: "Application du froid pour aider à calmer l’inflammation et les douleurs.",
+  },
+  {
     icon: Dumbbell,
-    desc: "Formation en arts martiaux pour la discipline, la force et la maîtrise de soi.",
+    title: "Sport thérapeutique assisté",
+    text: "Exercices encadrés pour restaurer la mobilité, la force et l’équilibre.",
   },
   {
-    title: "Tai-Chi",
-    icon: Leaf,
-    desc: "Pratique douce pour l’équilibre, la respiration, la concentration et l’énergie.",
+    icon: Activity,
+    title: "Rééducation fonctionnelle",
+    text: "Accompagnement progressif après douleurs, AVC, fracture ou perte de mobilité.",
   },
   {
-    title: "Formation & Coaching",
-    icon: Sparkles,
-    desc: "Encadrement personnalisé pour sportifs, débutants, élèves et passionnés.",
+    icon: ShieldPlus,
+    title: "Suivi personnalisé",
+    text: "Programme adapté selon votre état, vos douleurs et vos objectifs de récupération.",
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="bg-neutral-100 px-5 py-24">
-      <div className="mx-auto max-w-7xl">
-        <div className="mb-12 text-center">
-          <p className="font-bold uppercase tracking-[0.3em] text-red-600">
+    <section id="services" className="relative overflow-hidden bg-black px-5 py-24 text-white">
+      <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-green-500/10 blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-orange-500/10 blur-3xl"></div>
+
+      <div className="relative mx-auto max-w-7xl">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mx-auto max-w-3xl text-center"
+        >
+          <p className="font-bold uppercase tracking-[0.35em] text-orange-500">
             Nos services
           </p>
-          <h2 className="mt-3 text-3xl font-black md:text-5xl">
-            Soins, discipline et bien-être
-          </h2>
-        </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <h2 className="mt-5 text-4xl font-black md:text-6xl">
+            Des soins complets pour votre bien-être
+          </h2>
+
+          <p className="mt-6 text-lg leading-8 text-neutral-400">
+            Une approche naturelle, moderne et personnalisée pour soulager les douleurs,
+            améliorer la mobilité et accompagner la récupération.
+          </p>
+        </motion.div>
+
+        <div className="mt-16 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => {
             const Icon = service.icon;
 
             return (
               <motion.div
                 key={service.title}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.08 }}
                 viewport={{ once: true }}
-              
+                transition={{ duration: 0.7, delay: index * 0.08 }}
+                className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 shadow-2xl backdrop-blur transition hover:-translate-y-2 hover:border-orange-500/40"
               >
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-red-600 text-white shadow-lg shadow-red-600/30 transition group-hover:scale-110"  >
-                  <Icon />
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 via-transparent to-orange-500/10 opacity-0 transition group-hover:opacity-100"></div>
+
+                <div className="relative">
+                  <div className="mb-6 inline-flex rounded-2xl bg-green-500/10 p-4 text-green-500 transition group-hover:bg-orange-500/10 group-hover:text-orange-500">
+                    <Icon size={36} />
+                  </div>
+
+                  <h3 className="text-2xl font-black">
+                    {service.title}
+                  </h3>
+
+                  <p className="mt-4 leading-8 text-neutral-400">
+                    {service.text}
+                  </p>
+
+                  <div className="mt-8 h-1 w-16 rounded-full bg-orange-500 transition group-hover:w-28 group-hover:bg-green-500"></div>
                 </div>
-
-                <h3 className="text-xl font-black text-neutral-950">
-                  {service.title}
-                </h3>
-
-                <p className="mt-4 leading-7 text-neutral-600">
-                  {service.desc}
-                </p>
               </motion.div>
             );
           })}

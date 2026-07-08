@@ -91,7 +91,7 @@ export default function Home() {
             Prise en charge naturelle et thérapeutique des douleurs,
             troubles fonctionnels et pathologies chroniques grâce à la
             médecine traditionnelle chinoise, la rééducation, le sport
-            thérapeutique et les soins assistés.
+            thérapeutique et les soins assistés. Grace a la médecine traditionnelle chinoise par les séances de massage tuina, acupuncture, ventouse moxibution et sport thérapeutique assisté
           </p>
 
           <div className="mt-10 flex flex-wrap gap-5">

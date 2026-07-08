@@ -24,6 +24,7 @@ const protocoles = [
   "Électrostimulation",
   "Thermothérapie & Cryothérapie",
   "Sport thérapeutique assisté",
+  "moxibution",
 ];
 
 export default function WhyChooseUs() {

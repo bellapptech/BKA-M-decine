@@ -15,6 +15,16 @@ const products = [
     desc: "Mélange naturel à base de plantes pour soutenir l’équilibre du corps.",
   },
   {
+    name: "Arthrose / Rhumatisme / Goutte",
+    image: "/assets/calciumadultbio.jpeg",
+    desc: "Formule naturelle indiquée pour accompagner les douleurs articulaires, l’arthrose, le rhumatisme et la goutte.",
+  },
+  {
+    name: "Nerf Sciatique / Crampes",
+    image: "/assets/nerfsciantique.jpeg",
+    desc: "Solution naturelle destinée à accompagner les douleurs du nerf sciatique, les crampes et les tensions nerveuses.",
+  },
+  {
     name: "Formules Traditionnelles",
     image: "/assets/product.jpeg",
     desc: "Solutions naturelles disponibles sur demande selon les besoins.",

@@ -18,6 +18,13 @@ const images = [
   "/assets/bkagallery12.jpeg",
   "/assets/bkagallery13.jpeg",
   "/assets/bkagallery14.jpeg",
+  "/assets/newslide1.jpeg",
+  "/assets/newslide2.jpeg",
+  "/assets/newslide3.jpeg",
+  "/assets/newslide4.jpeg",
+  "/assets/newslide5.jpeg",
+  "/assets/newslide6.jpeg",
+  "/assets/newslide7.jpeg",
 ];
 
 export default function Galerie() {

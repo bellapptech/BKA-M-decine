@@ -13,12 +13,7 @@ export default function About() {
           viewport={{ once: true }}
           className="grid grid-cols-2 gap-4"
         >
-          <img
-            src="/assets/bka3.jpeg"
-            alt="BKA"
-            className="h-72 w-full rounded-3xl object-cover shadow-xl"
-          />
-
+        
           <img
             src="/assets/bka4.jpeg"
             alt="BKA"

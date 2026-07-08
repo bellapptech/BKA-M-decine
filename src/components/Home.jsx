@@ -32,6 +32,7 @@ const protocoles = [
   "Thermothérapie",
   "Cryothérapie",
   "Sport thérapeutique assisté",
+  "moxibution",
 ];
 
 const products = [
@@ -89,9 +90,7 @@ export default function Home() {
 
           <p className="mt-8 max-w-2xl text-lg leading-8 text-neutral-300">
             Prise en charge naturelle et thérapeutique des douleurs,
-            troubles fonctionnels et pathologies chroniques grâce à la
-            médecine traditionnelle chinoise, la rééducation, le sport
-            thérapeutique et les soins assistés. Grace a la médecine traditionnelle chinoise par les séances de massage tuina, acupuncture, ventouse moxibution et sport thérapeutique assisté
+            troubles fonctionnels et pathologies chroniques. Grace a la médecine traditionnelle chinoise par les séances de massage (tuina), acupuncture, ventouse moxibution et sport thérapeutique assisté
           </p>
 
           <div className="mt-10 flex flex-wrap gap-5">
@@ -203,7 +202,7 @@ export default function Home() {
         <div className="rounded-[2rem] border border-orange-500/20 bg-white/5 p-6 backdrop-blur lg:col-span-2">
           <div className="mb-5 flex items-center gap-3">
             <Package className="text-orange-500" />
-            <h2 className="text-3xl font-black text-orange-500">Produits</h2>
+            <h2 className="text-3xl font-black text-orange-500">Nos produits de pharmacopée Naturel</h2>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2">

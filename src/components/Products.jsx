@@ -14,6 +14,11 @@ const products = [
     image: "/assets/bkaproduct2.jpeg",
     desc: "Mélange naturel à base de plantes pour soutenir l’équilibre du corps.",
   },
+   {
+    name: "Calcium Adulte Bio",
+    image: "/assets/bkaproductnew.jpeg",
+    desc: "naturel à base de plantes pour soutenir l’équilibre du corps.",
+  },
   {
     name: "Arthrose / Rhumatisme / Goutte",
     image: "/assets/calciumadultbio.jpeg",
@@ -27,7 +32,7 @@ const products = [
   {
     name: "Formules Traditionnelles",
     image: "/assets/product.jpeg",
-    desc: "Solutions naturelles disponibles sur demande selon les besoins.",
+    desc: "Découvrez notre thé a 42 vertus exceptionnelles une solution naturelle disponible sur demande selon vos besoins",
   },
 ];
 
